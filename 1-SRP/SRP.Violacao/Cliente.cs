@@ -8,5 +8,11 @@ namespace SOLID._1_SRP.SRP.Violacao
 {
     class Cliente
     {
+        public int ClienteId { get; set; }
+        public string Nome { get; set; }
+        public string Email { get; set; }
+        public int Cpf { get; set; }
+        public DateTime DataCadastro { get; set; }
+
     }
 }
