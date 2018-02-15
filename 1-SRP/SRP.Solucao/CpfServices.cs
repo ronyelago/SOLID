@@ -10,7 +10,12 @@ namespace SOLID._1_SRP.SRP.Solucao
     {
         internal static bool IsValid(string cpf)
         {
-            throw new NotImplementedException();
+            if (cpf.Length != 11)
+            {
+                return false;
+            }
+
+            return true;
         }
     }
 }
