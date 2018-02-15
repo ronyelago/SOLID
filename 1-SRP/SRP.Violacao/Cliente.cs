@@ -11,24 +11,40 @@ namespace SOLID._1_SRP.SRP.Violacao
 {
     class Cliente
     {
+        /* Responsabilidades desta classe: 
+         * Se adiciona ao Bando de Dados - uma classe não deve se adicionar ao Banco
+         * 
+         *
+         */
+
+
         public int ClienteId { get; set; }
         public string Nome { get; set; }
         public string Email { get; set; }
         public string Cpf { get; set; }
         public DateTime DataCadastro { get; set; }
 
+        // Este método não deveria estar nesta classe,
+        // além disso, como seu nome diz, ele deveria apenas adicionar 
+        // um cliente no banco de dados.
+        // 4 responsabilidades em um único método
         public string AdicionarCliente()
         {
+
+            // Validação de email não deveria estar aqui
             if (!Email.Contains("@"))
             {
                 return "Email inválido";
             }
 
+            // Validação de CFP não deveria estar aqui
             if (Cpf.Length != 11)
             {
                 return "CPF inválido!";
             }
 
+            // Este método não deveria se conectar ao banco de dados
+            // e nem saber qual bando está sendo utilizado
             using (var connection = new SqlConnection())
             {
                 using (var command = new SqlCommand())
@@ -48,6 +64,7 @@ namespace SOLID._1_SRP.SRP.Violacao
                 }
             }
 
+            // Este método não deveria saber como enviar emails
             MailMessage mail = new MailMessage();
             SmtpClient client = new SmtpClient
             {
