@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace SOLID._1_SRP.SRP.Solucao
 {
-    class ClienteService
+    class CpfServices
     {
+        internal static bool IsValid(string cpf)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

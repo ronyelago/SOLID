@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SOLID._1_SRP.SRP.Solucao
 {
-    class CpfService
+    class ClienteServices
     {
     }
 }

@@ -44,9 +44,9 @@
   <ItemGroup>
     <Compile Include="1-SRP\SRP.Solucao\Cliente.cs" />
     <Compile Include="1-SRP\SRP.Solucao\ClienteRepository.cs" />
-    <Compile Include="1-SRP\SRP.Solucao\ClienteService.cs" />
-    <Compile Include="1-SRP\SRP.Solucao\CpfService.cs" />
-    <Compile Include="1-SRP\SRP.Solucao\EmailService.cs" />
+    <Compile Include="1-SRP\SRP.Solucao\ClienteServices.cs" />
+    <Compile Include="1-SRP\SRP.Solucao\CpfServices.cs" />
+    <Compile Include="1-SRP\SRP.Solucao\EmailServices.cs" />
     <Compile Include="1-SRP\SRP.Violacao\Cliente.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

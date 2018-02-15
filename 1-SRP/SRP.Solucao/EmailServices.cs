@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace SOLID._1_SRP.SRP.Solucao
 {
-    class EmailService
+    class EmailServices
     {
+        internal static bool IsValid(string email)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
