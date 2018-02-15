@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -46,6 +47,21 @@ namespace SOLID._1_SRP.SRP.Violacao
                     command.ExecuteNonQuery();
                 }
             }
+
+            MailMessage mail = new MailMessage();
+            SmtpClient client = new SmtpClient
+            {
+                Port = 25,
+                DeliveryMethod = SmtpDeliveryMethod.Network,
+                UseDefaultCredentials = false,
+                Host = "smtp.google.com"
+            };
+
+            mail.Subject = "Bem-Vindo(a)!";
+            mail.Body = "Parabéns, você está cadastrado(a)!";
+            client.Send(mail);
+
+            return "Cliente cadastrado com sucesso!";
         }
     }
 }
