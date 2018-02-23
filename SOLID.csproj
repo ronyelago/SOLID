@@ -48,6 +48,8 @@
     <Compile Include="1-SRP\SRP.Solucao\CpfServices.cs" />
     <Compile Include="1-SRP\SRP.Solucao\EmailServices.cs" />
     <Compile Include="1-SRP\SRP.Violacao\Cliente.cs" />
+    <Compile Include="2-OCP\OCP.Violacao\DebitoConta.cs" />
+    <Compile Include="2-OCP\OCP.Violacao\TipoConta.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -55,7 +57,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="2-OCP\" />
+    <Folder Include="2-OCP\OCP.Solucao\" />
     <Folder Include="3-LSP\" />
     <Folder Include="4-ISP\" />
     <Folder Include="5-DIP\" />

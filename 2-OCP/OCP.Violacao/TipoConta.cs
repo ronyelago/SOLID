@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace SOLID._2_OCP.OCP.Violacao
 {
-    class TipoConta
+    public enum TipoConta
     {
+        Corrente,
+        Poupanca
     }
 }
