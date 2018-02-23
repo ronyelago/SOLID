@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace SOLID._2_OCP.OCP.Solucao
 {
-    class DebitoContaPoupanca
+    class DebitoContaPoupanca : DebitoConta
     {
+        public override string Debitar(decimal valor, string conta)
+        {
+            // Valida Aniversário da Conta
+            // Debita Conta Corrente
+
+            return NumeroTransacao;
+        }
     }
 }
