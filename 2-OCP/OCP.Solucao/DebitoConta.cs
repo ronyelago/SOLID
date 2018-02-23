@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace SOLID._2_OCP.OCP.Solucao
 {
-    class DebitoConta
+    public abstract class DebitoConta
     {
+        public string NumeroTransacao { get; set; }
+        public abstract string Debitar(decimal valor, string conta);
     }
 }
